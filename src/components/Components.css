@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/Fonts/Poppins/Poppins-Medium.ttf');
+    font-display: swap;
+  }
+@font-face {
+    font-family: Poppins-bold;
+    src: url('../assets/Fonts/Poppins/Poppins-Bold.ttf');
+    font-display: swap;
+  }
+@font-face {
+    font-family: Poppins-light;
+    src: url('../assets/Fonts/Poppins/Poppins-Light.ttf');
+    font-display: swap;
+  }
+
+:root{
+    --main-color:#292627;
+    --main-bg-color:#F5F5F5;
+    --main-text-color:var(--main-color);
+    --secondary-text-color:#767575;
+    --font-family:Poppins;
+    --font-family-bold:Poppins-bold;
+    --font-family-light:Poppins-light;
+    --font-weight-meduim:16px;
+    --font-weight-large:36px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    /* border: 1px solid black; */
+
+
+
+}
+
+
+/* nav bar================================================= */
+.navContainer{
+    display: flex;
+    /* border: 1px solid black; */
+    height: min-content;
+    gap: 40px;
+    transition: all 0.5s ease ;
+
+}
+.nav_item{
+    position: static;
+    color: var(--secondary-text-color);
+    font-size: var(--font-weight-meduim);
+    /* font-size: 20px; */
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+.nav_item:hover{
+    color: var(--main-text-color);
+    font-family: var(--font-family-bold);
+    scale: 1.02;
+    transition: all 0.5s ease ;
+}
+.nav_item_selected{
+    color: var(--main-text-color);
+    font-family: var(--font-family-bold);
+
+}
+
+.Logo_container{
+    color: var(--main-text-color);
+    font-family: var(--font-family-bold);
+    font-size: var(--font-weight-large);
+}
+
+
+/* Home================================================= */
+
+.Container{
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid black; */
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    /* margin-top: -0px; */
+}
+.social{
+    /* background-color: var(--main-color); */
+    width: 50px;
+    height: 100px;
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.social a:hover{
+    scale: 1.02;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+/* .facebook:hover{
+    scale: ;
+}
+.instagram:hover{
+    scale: ;
+} */
+
+.Me{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -100px;
+
+}
+
+.my_name{
+    font-size: var(--font-weight-large);
+    color: var(--main-color);
+    font-family: var(--font-family);
+}
+.occup_container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5px;
+    margin-top: -25px;
+    /* margin-bottom: 5px; */
+}
+.line{
+    width: 50px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: var(--secondary-text-color);
+}
+.occupation{
+
+    font-family: var(--font-family);
+    color: var(--secondary-text-color);
+    font-size: large;
+}
+.info{
+    font-size: var(--font-weight-meduim);
+    color: var(--secondary-text-color);
+    font-family: var(--font-family);
+
+}
+.pic{
+    /* position: absolute; */
+    width: 250px;
+    height: 250px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin-top: -300px;
+    background: url('../assets/images/nasro_pic.jpg');
+    background-size: cover;
+    background-position: -60px;
+    border: 3px solid var(--main-color);
+    cursor: pointer;
+}
+.pic:hover{
+    scale: 1.08;
+    transition: all ease-in-out 0.3s;
+}
+
+.sayHello{
+    width: 150px;
+    height: 60px;
+    border-radius:20px ;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.sayHello .text{
+    font-family: var(--font-family);
+    color: var(--main-bg-color);
+}
+
+.sayHello:hover{
+    scale: 1.02;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+    border: 3px solid var(--main-color);
+
+}
+.sayHello:hover .text{
+    scale: 1.03;
+
+    color: var(--main-color);
+}
+.sayHello:hover .sayHelloIcon{
+    scale: 1.03;
+    fill: var(--main-color);
+}
+
+.ScrollDown{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 60px;
+}
+.Mouse{
+    width: 20px;
+    height: 30px;
+    border-radius:10px;
+    border: 2px solid var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+.wheel{
+    width: 2px;
+    height:10px ;
+    background-color: var(--main-color);
+    border-radius:10px;
+    margin-top: 3px;
+}
+.ScrollDown .Text {
+    font-family: var(--font-family);
+}
+.arrow{
+    /* position: absolute; */
+    /* top: 10px; */
+    animation:arowanim ease 1.5s infinite ;
+}
+@keyframes arowanim {
+    0%{
+        margin-top: 0px;
+
+    }
+    80%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0px;
+
+    }
+    
+}

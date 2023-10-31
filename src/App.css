@@ -1,0 +1,32 @@
+:root{
+  --main-color:#292627;
+  --main-bg-color:#F5F5F5;
+  --main-text-color:var(--main-color);
+  --secondary-text-color:#767575;
+  --font-family:Poppins;
+  --font-family-bold:Poppins-bold;
+  --font-family-light:Poppins-light;
+  --font-weight-meduim:16px;
+  --font-weight-large:36px;
+
+}
+
+
+.App{
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+  background-color: var(--main-bg-color);
+  /* align-self: center; */
+}
+.AppContainer{
+  width:80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap :20px;
+  /* margin-top: 20px; */
+}
